@@ -1,0 +1,410 @@
+<%# <input type="checkbox" id="mpclose" />
+	<div class="mpfix">
+	  <div class="mpbody">
+	    <%# <label for="mpclose">
+	      <svg viewBox="0 0 320 512">
+	        <path d="M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z"></path>
+	      </svg>
+	    </label> %>
+	    <%# <a href="#">
+        <%# if @banner_image.present? %>
+          <%#= image_tag(@banner_image.image.url, width: "550px;") %>
+        <%# else %>
+          <%#= image_tag('popup_suditi_school.jpg', alt:"", width: "550px;") %>
+        <%# end %>
+	    </a> %>
+	  </div>
+	</div> %>
+  <div class="main-banner banner_up">
+    <div id="rev_slider_34_1_wrapper" class="rev_slider_wrapper" data-alias="news-gallery34">
+      <div id="rev_slider_34_1" class="rev_slider" data-version="5.0.7">
+        <ul>
+          <li data-index="rs-129">
+            <% if @slider_images.present? %>
+              <%= image_tag(@slider_images.first.image.url, class: "rev-slidebg") %>
+            <% else %>
+              <%= image_tag('slider1.jpg', alt:"", class: "rev-slidebg") %>
+            <% end %>
+            <div class="tp-caption Newspaper-Title tp-resizeme"
+              id="slide-129-layer-1"
+              data-x="['left','left','left','left']" data-hoffset="['100','50','50','30']"
+              data-y="['top','top','top','center']" data-voffset="['165','135','105','0']"
+              data-fontsize="['50','50','50','30']"
+              data-lineheight="['55','55','55','35']"
+              data-width="['600','600','600','420']"
+              data-height="none"
+              data-whitespace="normal"
+              data-transform_idle="o:1;"
+              data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;"
+              data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;"
+              data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+              data-mask_out="x:0;y:0;s:inherit;e:inherit;"
+              data-start="1000"
+              data-splitin="none"
+              data-splitout="none"
+              data-responsive_offset="on">
+              <div class="banner-text">
+                <span class="sub-text"></span>
+                <h2>SANT PARAM DAYAL SR. SEC. SCHOOL</h2>
+                <% if @slider_one.present? %>
+                  <p><%= raw @slider_one.description %></p>
+                <% else %>
+                  <p>(AFFILIATED WITH CBSE, NEW DELHI, AFFILIATION NO. 2132655)</p>
+                <% end %>
+                <a class="btn-text" href="<%= welcome_about_us_path %>"> read more</a>
+              </div>
+            </div>
+          </li>
+          <!-- SLIDE  -->
+          <li data-index="rs-130" data-title="" data-description="">
+            <!-- MAIN IMAGE -->
+            <% if @slider_images.present? && @slider_images.count >= 2 %>
+              <%= image_tag(@slider_images.second.image.url, class: "rev-slidebg") %>
+            <% else %>
+              <%= image_tag('slider2.jpg', alt:"", class: "rev-slidebg") %>
+            <% end %>
+            <!-- LAYERS -->
+            <!-- LAYER NR. 2 -->
+            <div class="tp-caption Newspaper-Title   tp-resizeme "
+              id="slide-130-layer-1"
+              data-x="['left','left','left','left']" data-hoffset="['100','50','50','30']"
+              data-y="['top','top','top','center']" data-voffset="['165','135','105','0']"
+              data-fontsize="['50','50','50','30']"
+              data-lineheight="['55','55','55','35']"
+              data-width="['600','600','600','420']"
+              data-height="none"
+              data-whitespace="normal"
+              data-transform_idle="o:1;"
+              data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;"
+              data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;"
+              data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+              data-mask_out="x:0;y:0;s:inherit;e:inherit;"
+              data-start="1000"
+              data-splitin="none"
+              data-splitout="none"
+              data-responsive_offset="on">
+              <div class="banner-text">
+                <span class="sub-text"></span>
+                 <h2>SANT PARAM DAYAL SR. SEC. SCHOOL</h2>
+                <% if @slider_two.present? %>
+                  <p><%= raw @slider_two.description %></p>
+                <% else %>
+                  <p>(AFFILIATED WITH CBSE, NEW DELHI, AFFILIATION NO. 2132655)</p>
+                <% end %>
+                <a class="btn-text" href="<%= welcome_about_us_path %>"> read more</a>
+              </div>
+            </div>
+          </li>
+          <!-- SLIDE  -->
+          <li data-index="rs-131">
+            <!-- MAIN IMAGE -->
+            <% if @slider_images.present? && @slider_images.count > 2 %>
+              <%= image_tag(@slider_images.third.image.url, class: "rev-slidebg") %>
+            <% else %>
+              <%= image_tag('slider3.jpg', alt:"", class: "rev-slidebg") %>
+            <% end %>
+            <!-- LAYER NR. 2 -->
+            <div class="tp-caption Newspaper-Title   tp-resizeme "
+              id="slide-131-layer-1"
+              data-x="['left','left','left','left']" data-hoffset="['100','50','50','30']"
+              data-y="['top','top','top','center']" data-voffset="['165','135','105','0']"
+              data-fontsize="['50','50','50','30']"
+              data-lineheight="['55','55','55','35']"
+              data-width="['600','600','600','420']"
+              data-height="none"
+              data-whitespace="normal"
+              data-transform_idle="o:1;"
+              data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;"
+              data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;"
+              data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+              data-mask_out="x:0;y:0;s:inherit;e:inherit;"
+              data-start="1000"
+              data-splitin="none"
+              data-splitout="none"
+              data-responsive_offset="on">
+              <div class="banner-text">
+                <span class="sub-text"></span>
+                 <h2>SANT PARAM DAYAL SR. SEC. SCHOOL</h2>
+                <% if @slider_three.present? %>
+                  <p><%= raw @slider_three.description %></p>
+                <% else %>
+                  <p>(AFFILIATED WITH CBSE, NEW DELHI, AFFILIATION NO. 2132655)</p>
+                <% end %>
+                <a class="btn-text" href="<%= welcome_about_us_path %>"> read more</a>
+              </div>
+            </div>
+          </li>
+          <!-- SLIDE  -->
+        </ul>
+        <div class="tp-bannertimer tp-bottom"></div>
+      </div>
+    </div>
+  </div>
+  <section class="top_section__block">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-sm-12">
+          <div class="single_top__block text-center">
+            <div class="icon-box__block">
+              <i class="fa fa-trophy color"></i>
+            </div>
+            <div class="single_text__block">
+              <h2>Activities</h2>
+              <% if @activity.present? %>
+                <p><%= raw @activity.description %></p>
+              <% else %>
+                <p>Teaching does not need to be limited to textbooks and blackboards. With our fun school activities for kids, learning in school becomes an interesting and enjoyable exercise.</p>
+              <% end %>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <div class="single_top__block text-center">
+            <div class="icon-box__block">
+              <i class="fa fa-building"></i>
+            </div>
+            <div class="single_text__block">
+              <h2>Infrastructure</h2>
+              <% if @infrastructure.present? %>
+                <p><%= raw @infrastructure.description %></p>
+              <% else %>
+                <p>The school building and playground with greenery all around, the school campus is designed to cater to the needs of young, growing children.
+                  The school boasts of the modern facilities.
+                </p>
+              <% end %>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <div class="single_top__block text-center">
+            <div class="icon-box__block">
+              <i class="fa fa-bus"></i>
+            </div>
+            <div class="single_text__block">
+              <h2>Facilities</h2>
+              <% if @facilities.present? %>
+                <p><%= raw @facilities.description %></p>
+              <% else %>
+                <p>We have a well-equipped range of facilities and resources for all students to help them achieve a well-rounded education in a child-friendly atmosphere. The school has a well stocked library.</p>
+              <% end %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="aboutus" class="about-us">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-8">
+          <h2 style="padding-top:35px">
+            Welcome to <br>
+            <span style="font-size: 30px">SANT PARAM DAYAL SR. SEC. SCHOOL</span>
+          </h2>
+          <% if @welcome_section.present? %>
+            <p style="font-size: 14px; text-align:justify"><%= raw @welcome_section.description %></p>
+          <% else %>
+            <p style="font-size: 14px; text-align:justify">
+              The founders and promoters of SANT PARAM DAYAL SR. SEC. SCHOOL comprises of illustrious entrepreneurs, renowned educationists, great Social Workers and philanthropists who from the core of their heart always felt the need to create a Sanctuary of Education, a school of their dreams, providing world-class facilities but not letting the Indian philosophy, culture and tradition dilute in the process.<br />
+              This dream and vision led the group to establish ‘R.S. Educational Society’ (RSES) in the year 2016. The Trust immediately identified a prime land on the National Highway-2 (Near Etawah City). Henceforth the construction of this dream educational institute started with an experienced team of architects, interior designers, engineers, and educationist.
+            </p>
+          <% end %>
+          <p align="right"><a href="<%= welcome_about_us_path %>" class="blue more_btn__block" style="font-size:12px;">Read More</a></p>
+        </div>
+        <div class="col-sm-12 col-md-4" style="padding-top:35px; padding-bottom: 35px">
+          <% if @about_image.present? %>
+            <%= image_tag(@about_image.image.url, alt:"DEMO SCHOOL ACADEMY", style:"height: 320px;") %>
+          <% else %>
+            <%= image_tag('about-img.jpg', alt:"DEMO SCHOOL ACADEMY", style:"height: 320px;") %>
+          <% end %>
+          
+        </div>
+        <div class="clear"></div>
+        <div class="salient_features">
+          <h2 style="margin-left: 15px;">Salient Features</h2>
+          <div class="col-sm-12 col-md-6">
+            <ul>
+              <li>World class co-educational an English medium public school.</li>
+              <li>Focus on Indian Values and Ethos.</li>
+              <li>All classes are E-learning with digital Smart-Board facility.</li>
+              <li>Imparting quality education with well experienced and qualified teaching staff.</li>
+              <li>Separate well equipped Science, Maths, English and Computer labs.</li>
+              <li>Competitive exams preparing facility for meritorious students from class VI onwards.</li>
+              <li>For security and safety measurement of the students, all classes are equipped with CCTV.</li>
+              <li>Separate water coolers for all floors with RO facility.</li>
+            </ul>
+          </div>
+          <div class="col-sm-12 col-md-6">
+            <ul>
+              <li>Different sports and Yoga classes for physical & mental development of the students.</li>
+              <li>LRCs facility for Pre-primary students.</li>
+              <li>Teacher-students ratio as per CBSE norms for more focus on imparting values along with best teaching practice.</li>
+              <li>Fleet of buses for all Area within the radius of 15 Kms of SANT PARAM DAYAL SR. SEC. SCHOOL.</li>
+              <li>Special discount to meritorious students.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="counter-section__block counter-section__img padding ptb-xs-60">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-md-3 counter-section__box">
+          <span class="counter" data-count="30">30</span>
+          <p>professional teacher</p>
+        </div>
+        <div class="col-sm-6 col-md-3 counter-section__box">
+          <span class="counter" data-count="455">455</span>
+          <p>Students</p>
+        </div>
+        <div class="col-sm-6 col-md-3 counter-section__box">
+          <span class="counter" data-count="1">1</span>
+          <p>Branches</p>
+        </div>
+        <div class="col-sm-6 col-md-3 counter-section__box">
+          <span class="counter" data-count="55">55</span>
+          <p>Rooms</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="event-section__block padding ptb-xs-60">
+    <div class="container">
+      <div class="row pb-30">
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="single_plan__block single_plan__block-img block_bg6 block_bg6 matchHeigh">
+            <div class="plan-content-box plan-content-box__white__bg">
+              <h3>Manager's Message</h3>
+              <% if @manager_photo.present? %>
+                <%= image_tag(@manager_photo.image.url, alt:"president", style: "width: 185px;margin-right: 10px;float:left;") %>
+              <% else %>
+                <%= image_tag('manager.jpg', alt:"president", style: "width: 185px;margin-right: 10px;float:left;") %>
+              <% end %>
+              <% if @president_message.present? %>
+                <p><%= raw @president_message.description %></p>
+              <% else %>
+                <p style="text-align:justify;">"Welcome to The SANT PARAM DAYAL SR. SEC. SCHOOL.<br />Since its inception, SANT PARAM DAYAL SR. SEC. SCHOOL has expanded opportunities for high school and middle school students through innovative programs that prepare them for college and beyond.To prepare educators with the technological skills necessary to enhance learning experiences both online and in the classroom."
+                </p>
+              <% end %>
+              <h4 style="margin-bottom:0px !important">Gaurav Sharma</h4>
+              <a href="<%= welcome_chairman_message_path %>" class="more_btn__block pull-right" style="margin-top: 0px;">More <i class="fa fa-angle-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6">
+          <div class="single_plan__block single_plan__block-img block_bg6 block_bg6 matchHeigh">
+            <div class="plan-content-box plan-content-box__white__bg">
+              <h3>Principal's Message</h3>
+              <% if @principal_photo.present? %>
+                <%= image_tag(@principal_photo.image.url, alt:"Principal", style: "width: 185px;margin-right: 10px;float:left;") %>
+              <% else %>
+                <%= image_tag('principal.jpeg', alt:"Principal", style: "width: 160px;margin-right: 10px;float:left;") %>
+              <% end %>
+              <% if @principal_message.present? %>
+                <p><%= raw @principal_message.description %></p>
+              <% else %>
+                <p style="text-align:justify;">"Dear students and parents / Guardians of SANT PARAM DAYAL SR. SEC. SCHOOL.It is with great pleasure that I welcome you to our school website. I am honored and feel very privileged to be the Principal of SANT PARAM DAYAL SR. SEC. SCHOOL, Etawah.On behalf of the entire team at AWS, I welcome you all to the Aristotle family. It is extremely exciting to begin the academic year 2019-20."
+                </p>
+              <% end %>
+              <h4>Dr. Brahm Prakash Sharma</h4>
+              <a href="<%= welcome_principal_message_path %>" class="more_btn__block pull-right" style="margin-top: 0px;">More <i class="fa fa-angle-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="work" class="padding">
+    <div class="container">
+      <!-- work Filter -->
+      <div class="row">
+        <div class="col-sm-12">
+          <h2>Photo Gallery</h2>
+        </div>
+      </div>
+      <!-- End work Filter -->
+      <div class="row container-grid nf-col-3" style="position: relative;">
+        <% @photos.each do |photo|%>
+          <div class="col-md-4 nf-item photo spacing">
+            <div class="item-box">
+              <a>
+                <%= image_tag(photo.image.url, class: "item-container") %>
+              </a>
+              <div class="link-zoom">
+                <!--<a href="portfolio-single.html" class="project_links"> <i class="fa fa-link"> </i> </a>-->
+                <a href="<%= photo.image.url %>" class="fancylight popup-btn" data-fancybox-group="light"> <i class="fa fa-search-plus"></i> </a>
+              </div>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </section>
+    <style>
+      .item-box {
+        height: 250px;
+      }
+    .nav > li > a:hover, .nav > li > a:focus{
+      background-color: #67973b !important;
+    }
+      .mpfix {
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgb(0 0 0 / 66%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 999;
+      transition: all 300ms ease-in-out;
+      }
+      .mpfix > .mpbody {
+      max-width: 90%;
+      max-height: 90%;
+      position: relative;
+      }
+      .mpfix > .mpbody > a {
+      display: block;
+      box-shadow: 0 2px 5px rgba(0,0,0,.25);
+      border-radius: 4px;
+      overflow: hidden;
+      }
+      .mpfix > .mpbody > a > img {
+      max-width: 100%;
+      display: block;
+      }
+      label[for=mpclose] {
+      user-select: none;
+      height: 40px;
+      width: 40px;
+      text-align: center;
+      display: block;
+      position: absolute;
+      top: -20px;
+      right: -15px;
+      background: #fff;
+      border-radius: 40px;
+      padding: 5px;
+      box-sizing: border-box;
+      z-index: 1;
+      box-shadow: 0 2px 5px rgba(0,0,0,.25);
+      cursor: pointer;
+      }
+      label[for=mpclose] > svg {
+      height: 30px;
+      width: 30px;
+      fill: red;
+      }
+      #mpclose {
+      display: none;
+      }
+      #mpclose:checked + .mpfix {
+      left: -100%;
+      }
+    </style>

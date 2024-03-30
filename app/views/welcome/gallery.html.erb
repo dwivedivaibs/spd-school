@@ -1,0 +1,42 @@
+<div class="wrapper">
+  <section class="inner-intro  padding bg-img1 overlay-dark light-color">
+    <div class="container">
+      <div class="row title">
+      </div>
+    </div>
+  </section>
+  <div class="clearfix"></div>
+  <section id="work" class="padding ptb-xs-60">
+    <div class="container">
+      <div class="row pb-30 text-center">
+        <div class="col-sm-12 mb-20">
+          <h2><span>Our</span> Gallery</h2>
+          <span class="b-line"></span>
+        </div>
+      </div>
+      <div class="row container-masonry nf-col-3">
+        <div class="nf-item branding coffee spacing">
+        </div>
+        <div class="row">
+          <% @photos.each do |photo|%>
+            <div class="col-md-4 nf-item grid-sizer photo spacing">
+              <div class="item-box">
+                <a> 
+                  <%= image_tag(photo.image.url, class: "item-container") %>
+                </a>
+                <div class="link-zoom">
+                  <a href="<%= photo.image.url %>" class="fancylight popup-btn" data-fancybox-group="light"> <i class="fa fa-search-plus"></i> </a>
+                </div>
+              </div>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+<style type="text/css">
+  .item-box {
+    height: 250px;
+  }
+</style>

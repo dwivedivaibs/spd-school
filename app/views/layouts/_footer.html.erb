@@ -1,0 +1,65 @@
+<footer>
+  <div class="top_footer_info__block ptb-20">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="single_info__block">
+            <i class="fa fa-phone"></i>
+            <h4>+91-9760013590, 8057600091<span>Monday-Saturday, 8am-4pm</span></h4>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="single_info__block">
+            <i class="fa fa-envelope-o"></i>
+            <h4>santparamdayal@gmail.com <span>Monday-Saturday, 8am-4pm</span></h4>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="single_info__block">
+            <i class="fa fa-clock-o"></i>
+            <h4>School Timing <span>8AM - 2pm</span></h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="main_footer__block pb-0 pt-60">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="footer_box__block">
+            <h4>Useful links</h4>
+            <%= render 'layouts/side_bar' %>
+          </div>
+        </div>
+        <div class="col-md-9">
+          <div>
+            <h4>How to Reach Us</h4>
+            <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=SANT PARAM DAYAL SR. SEC. SCHOOL Gonchh, Kotla Road Firozabad Uttar Pradesh 283203&amp;t=m&amp;z=10&amp;output=embed&amp;iwloc=near" title="SANT PARAM DAYAL SR. SEC. SCHOOL Gonchh, Kotla Road Firozabad Uttar Pradesh 283203" aria-label="SANT PARAM DAYAL SR. SEC. SCHOOL" width="95%" height="400" frameborder="2px" style="border:2px solid #dadada" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="copyriight_block ptb-20 mt-20">
+        <div class="row">
+          <div class="col-sm-12">
+            <p style="text-align:center; font-size:12px">© COPYRIGHT <%= Date.today.year %> SANT PARAM DAYAL SR. SEC. SCHOOL | ALL RIGHTS RESERVED | DEVELOPED BY <a href="https://www.linkedin.com/in/vaibhav-dwivedi-8a7287185" target="_blank">VAIBHAV DWIVEDI</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<style type="text/css">
+  .main_footer__block{
+    background-image: url(<%= asset_path 'footer_bg.jpg' %>);
+    background-size: cover;
+    background-position:top center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+    color: #fff;
+  }
+  .footer_box__block li::after{
+    top: 15px;
+  }
+</style>

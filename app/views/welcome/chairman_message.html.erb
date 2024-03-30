@@ -1,0 +1,53 @@
+<section class="inner-intro bg-img light-color overlay-before parallax-background">
+  <div class="container">
+    <div class="row title">
+      <!--<h1 data-title="About"><span>Chairman's Message</span></h1>-->
+    </div>
+  </div>
+</section>
+<div id="about-section" class="padding pt-xs-60">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="heading-box pb-30">
+          <h2><span>Manager's</span> Message</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" style="margin-right:15px; padding-left:0px">
+          <div class=" wish-send haslayout">
+            <figure>
+              <%= image_tag('manager.jpg',style: "border:2px solid #67973b") %>
+            </figure>
+          </div>
+        </div>
+        <% if @president_message.present? %>
+          <p class="inner-p"><%= raw @president_message.description %></p>
+        <% else %>
+          <p class="inner-p">
+            Dear students and parents / Guardians of&nbsp;<strong><b>SANT PARAM DAYAL SR. SEC. SCHOOL</b></strong><strong><b>.</b></strong></p>
+            <p>Sant Param Dayal Hr. Sec. School Philosophy is encapsulated in our mantra ‟Pride in Excellence.”</p>
+            <p>We are passionate about child care and education and desire that all children have the option of attending high quality childcare close to their home.</p>
+            <p>To assist us in cohering this object Sant Param Dayal Hr. Sec. School Located in area under you will Provide personalized education and care to your child based on the advanced and proven techniques available with trained, personable staff and faculties.</p>
+            <p>It is an Honor and privilege for Sant Param Dayal Hr. Sec. School to be encrusted with the care of your child Sant Pram Dayal Hr. Sec. School  believes the children are capable and innovative . So we look forward working with you to help your child at learn and grow. We hope that you will mark many of the element of the Sant Param Dayal Hr. Sec. School Programme that makes us unique including: A warm welcoming environment; A Personalized portfolio recording your child’s Developing, use of latest teachnologies of enhance your learning capacity, understanding, kind staff and well disciplined faculties and the center artistic and playful layout to facililate learning and teaching.
+            </p>
+            </p>
+          </p>
+        <% end %>
+        <p class="inr-hd"><br><b style="font-size:20px">Dr. Brahm Prakash Sharma<br />PRINCIPAL</p>
+      </div>
+      <div class="col-sm-3">
+        <%= render 'layouts/side_bar' %>
+      </div>
+    </div>
+  </div>
+</div>
+<style type="text/css">
+  .mission-img{
+    background: url("<%= asset_path('bg_1.jpg') %>") 0 20% no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+</style>

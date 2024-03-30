@@ -1,0 +1,78 @@
+<br><br><br><br>
+<div class="container">
+  <div class="row">
+    <div class="col-md-11">
+      <center>
+        <div class="row">
+          <div class="col-md-3">
+            <h6>SCHOOL CODE: 71480 &nbsp;&nbsp;&nbsp;&nbsp; AFFILIATION NO.: 2133211</h6>
+          </div>
+          <div class="col-md-6">
+            <h1 style="color: #FF9800"> ARISTOTLE WORLD SCHOOL</h1>
+          </div>
+          <div class="col-md-3">
+            <h6> CONTACT NO: +91- 9871408181, 8395020203</h6>
+          </div>
+        </div>
+        <br>
+        <h3>TRANSFER CERTIFICATE</h3>
+        <h3>TC No. / <%= @tc_entry.tc_number %></h3>
+      </center>
+    </div>
+    <div class="col-md-1">
+      <%= link_to "#", :onclick => 'window.print();return false;', class: 'btn btn-success pull-right' do %>
+        <i class="fa fa-print"></i>
+      <% end %>
+    </div>
+  </div>
+</div>
+<hr>
+<section class="padding ptb-xs-60">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="tab-content">
+          <div class="row">
+            <div class="col-sm-12">
+              <div>
+                <% %>
+                <% if @tc_entry.present? && @tc_entry.file.url %>
+                  <iframe id="fred" style="border:1px solid #666CCC" title="PDF in an i-Frame" src="<%= asset_path(@tc_entry.file.url) %>" frameborder="1" scrolling="auto" height="700" width="100%" ></iframe>
+                  </object>
+                <% else %>
+                  <!-- <iframe id="fred" style="border:1px solid #666CCC" title="PDF in an i-Frame" src="/assets/Affiliation_Letter.pdf" frameborder="1" scrolling="auto" height="700" width="100%" ></iframe> -->
+                <% end %>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style type="text/css">
+  hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 2px solid rgb(118 100 100 / 60%);
+  }
+  .tc_style{
+    padding: 20px;
+    border: 2px solid #ccc;
+    font-size: 20px;
+  }
+  .pd-20{
+    padding: 10px;
+    border-top: 1px solid #ccc;
+  }
+  a{
+    text-decoration: none !important;
+    color: #fff !important;
+  }
+  .fa-print{
+    font-size: 30px;
+    padding: 10px;
+  }
+</style>

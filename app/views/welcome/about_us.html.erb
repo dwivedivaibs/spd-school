@@ -1,0 +1,50 @@
+<section class="inner-intro about-img light-color overlay-before parallax-background">
+  <div class="container">
+    <div class="row title">
+    </div>
+  </div>
+</section>
+<div id="about-section" class="padding pt-xs-60">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="heading-box pb-30">
+          <h2><span>About</span> SANT PARAM DAYAL SR. SEC. SCHOOL</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-9 pb-xs-30">
+        <% if @about_us.present? %>
+          <div class="text-content"><%= raw @about_us.description %></div>
+        <% else %>
+          <div class="text-content">
+            <p style="text-align:justify">
+              The founders and promoters of <strong style="color: #f89f58;"><b>SANT PARAM DAYAL SR. SEC. SCHOOL</b></strong>&nbsp;comprises of illustrious entrepreneurs, renowned educationists, great Social Workers and philanthropists who from the core of their heart always felt the need to create a Sanctuary of Education, a school of their dreams, providing world-class facilities but not letting the Indian philosophy, culture and tradition dilute in the process.<br>
+
+              This dream and vision led the group to establish <strong style="color: #f89f58;"><b>‘R.S. Educational Society’ (RSES)</b></strong>&nbsp;in the year 2016. The Trust immediately identified a prime land on the National Highway-2 (Near Etawah City). Henceforth the construction of this dream educational institute started with an experienced team of architects, interior designers, engineers, and educationist.<br>
+
+              <strong style="color: #f89f58;"><em><b><i>Thus ‘SANT PARAM DAYAL SR. SEC. SCHOOL’ was born offering a tailor-made curriculum.</i></b></em></strong>
+
+              The offered curriculum prepares the students for any challenge across the world and further grooms every child into a good human being and an honest citizen of the country, who remains a true Indian at heart.
+
+              With its ideal location, experienced academicians, brilliant students, state of the art infrastructure, modern technology, a wide variety of sports activities, comfortable transport and to top it all generous &amp; growth-oriented thought of the founders, this contemporary school campus is growing each day.
+              <strong><b>SANT PARAM DAYAL SR. SEC. SCHOOL</b></strong> is an institution where each student gets ample opportunity and complete guidance to achieve the achievable in his/her respective life.
+            </p>  
+          </div>
+        <% end %>    
+      </div>
+      <div class="col-sm-3">
+        <%= render 'layouts/side_bar' %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style type="text/css">
+  .about-img{
+    background: url("<%= asset_path('about1.jpg') %>") 0 20% no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+</style>
