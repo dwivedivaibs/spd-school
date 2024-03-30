@@ -25,6 +25,6 @@ class CreateTcEntries < ActiveRecord::Migration[5.2]
 
       t.timestamps
     end
-    TcEntry.create!(tc_number: "AWS-123", student_name: "Vaibhav Dwivedi", father_name: "Pramod Kumar", mother_name: "Usha Dwivedi", nationality: "Indian", sc_st_obc: 0, dob: (Time.now-15.year), result: "Pass", subjects: "English, Math, Science, Hindi, SST", last_class: "IX", last_class_result: "Passed", qualified_for_promotion: 1, dues_paid: 0, ncc_cadets: 1, last_day_school: (Time.now-2.days), leaving_reason: "Parents Transfer", total_meeting_attendance: "150", total_attendance: "100", general_conduct: "Very Good", category: "INDEPENDENT Category", certificate_issue_date: Date.today)
+    # TcEntry.create!(tc_number: "AWS-123", student_name: "Vaibhav Dwivedi", father_name: "Pramod Kumar", mother_name: "Usha Dwivedi", nationality: "Indian", sc_st_obc: 0, dob: (Time.now-15.year), result: "Pass", subjects: "English, Math, Science, Hindi, SST", last_class: "IX", last_class_result: "Passed", qualified_for_promotion: 1, dues_paid: 0, ncc_cadets: 1, last_day_school: (Time.now-2.days), leaving_reason: "Parents Transfer", total_meeting_attendance: "150", total_attendance: "100", general_conduct: "Very Good", category: "INDEPENDENT Category", certificate_issue_date: Date.today)
   end
 end
