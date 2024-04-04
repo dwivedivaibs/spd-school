@@ -1,5 +1,5 @@
 # Change these
-server '54.89.213.2', port: 22, roles: [:web, :app, :db], primary: true
+server '44.210.146.20', port: 22, roles: [:web, :app, :db], primary: true
 
 set :repo_url,'git@github.com:dwivedivaibs/spd-school.git'
 set :application,     'spd-school'
