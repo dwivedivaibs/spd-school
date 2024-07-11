@@ -5,7 +5,7 @@ ActiveAdmin.register TcEntry do
   #
   # Uncomment all parameters which should be permitted for assignment
   #
-  permit_params :file, :student_name
+  permit_params :file, :student_name, :father_name, :mother_name, :tc_number, :nationality, :dob
   #
   # or
   #
