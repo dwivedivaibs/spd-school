@@ -85,3 +85,6 @@ gem 'figaro'
 
 gem 'ckeditor', '4.2.4'
 
+gem 'rake', '13.2.1'
+
+
