@@ -1,4 +1,5 @@
-source 'https://rubygems.org'
+source 'http://rubygems.org'
+
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.3'
@@ -51,6 +52,7 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
+
 group :development do
   gem 'capistrano', '~> 3.17.0',        require: false
   gem 'capistrano-rvm', '~> 0.1.2',     require: false
@@ -86,5 +88,6 @@ gem 'figaro'
 gem 'ckeditor', '4.2.4'
 
 gem 'rake', '13.2.1'
+
 
 
