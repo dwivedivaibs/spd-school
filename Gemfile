@@ -91,5 +91,6 @@ gem 'rake', '13.2.1'
 
 gem 'nokogiri', '~> 1.12.5'
 
+gem 'activeadmin_quill_editor'
 
 
