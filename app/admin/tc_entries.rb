@@ -33,17 +33,27 @@ ActiveAdmin.register TcEntry do
 
   form do |f|
     f.inputs do
-      TcEntry.column_names.map(&:to_sym).each do |field|
-        next if [:created_at, :updated_at].include?(field)
+      date_fields = [:dob, :last_day_school, :certificate_issue_date]
+      excluded_fields = [:id, :created_at, :updated_at]
 
-        if field == :dob
-          f.input :dob, as: :datepicker, datepicker_options: { year_range: "1950:#{Time.current.year}", max_date: "+0D" }
+      TcEntry.column_names.map(&:to_sym).each do |field|
+        next if excluded_fields.include?(field)
+
+        placeholder_text = "Enter #{field.to_s.humanize}"
+
+        if date_fields.include?(field)
+          f.input field,
+                  as: :datepicker,
+                  datepicker_options: {
+                    year_range: "1950:#{Time.current.year}",
+                    max_date: "+0D"
+                  },
+                  input_html: { placeholder: placeholder_text }
         else
-          f.input field
+          f.input field, input_html: { placeholder: placeholder_text }
         end
       end
     end
     f.actions
   end
-
 end
