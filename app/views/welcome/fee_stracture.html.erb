@@ -12,7 +12,7 @@
           <div class="row">
             <div class="col-sm-12">
               <div class="heading-box pb-30">
-                <center><h2><span>Fee</span> Structure 2024-25</h2></center>
+                <center><h2><span>Fee</span> Structure <%=current_academic_year_range%></h2></center>
               </div>
               <div>
                 <% @document = Document.find_by(name: "fee_structure", is_active: true) %>
